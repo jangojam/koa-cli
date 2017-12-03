@@ -6,9 +6,6 @@ router.get('/', user.login)
 router.get('/user', user.user)
 router.get('/fail', user.fail)
 router.get('/ejs', user.ejs)
-// router.get('/jade', user.jade)
-router.get('/jade', async  (ctx,next) => {
-      await  ctx.render('template', {title:'koa and jade'})
-    })
+router.get('/jade', user.jade)
 
 module.exports = router

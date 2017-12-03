@@ -20,6 +20,6 @@ module.exports = {
        await  ctx.render('template', {title})
     },
     async jade (ctx,next) {
-      await  ctx.render('template', {title:'koa and jade'})
+      await  ctx.render('template', {title:'koa and jade'}, true)
     }
 }
